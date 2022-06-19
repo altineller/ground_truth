@@ -1,0 +1,11 @@
+<launch>
+  <include file="$(find ground_truth)/launch/cam_ps3.launch"/>
+  <include file="$(find ground_truth)/launch/april.launch"/>
+  <node pkg="ground_truth" name="ground_truth_publisher" type="ground_truth_publisher.py" output="screen"/>
+  <!--
+  <node pkg="fake_localization" type="fake_localization" name="fake_localization" output="screen">
+    <param name="odom_frame_id" value="odom_combined"/>
+    <param name="base_frame_id" value="base_footprint"/>
+  </node>
+  -->>
+</launch>
