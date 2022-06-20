@@ -8,7 +8,7 @@ usb_camera_node
 
 ### TODO
 
-- camera calibration
+- further work on ground_truth_publisher
 - transformation when camera is not at top view
 - experiment with smaller markers
 - experiment with fake localization

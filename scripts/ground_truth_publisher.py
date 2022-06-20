@@ -33,8 +33,8 @@ class GroundTruthPublisher():
             y = odom.pose.pose.position.y
             self.ground_truth_pub.publish(odom)
             quat = tf.transformations.quaternion_from_euler(0, 0, 0)
-        # april already sends transform, so not needed. we can take tf from the move_tf, so this script and publishing of ground_truth might be unnecessary
-        #self.tf_pub.sendTransform((x,y,0), quat, odom.header.stamp, odom.child_frame_id, odom.header.frame_id)
+            # april already sends transform, so not needed. we can take tf from the move_tf, so this script and publishing of ground_truth might be unnecessary
+            #self.tf_pub.sendTransform((x,y,0), quat, odom.header.stamp, odom.child_frame_id, odom.header.frame_id)
 
 
 if __name__ == '__main__':
