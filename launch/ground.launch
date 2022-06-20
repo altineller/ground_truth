@@ -1,5 +1,5 @@
 <launch>
-  <include file="$(find ground_truth)/launch/cam_ps3.launch"/>
+  <include file="$(find ground_truth)/launch/ps3.launch"/>
   <include file="$(find ground_truth)/launch/april.launch"/>
   <node pkg="ground_truth" name="ground_truth_publisher" type="ground_truth_publisher.py" output="screen"/>
   <!--
