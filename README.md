@@ -2,7 +2,6 @@
 
 Copyright, 2019, Can Altineller <altineller@gmail.com>
 
-### TODO
+### Requirements
 
-- dependencies in package, etc.
-- testing
+usb_camera_node
